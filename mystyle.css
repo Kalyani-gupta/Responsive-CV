@@ -1,0 +1,150 @@
+
+.main {
+    margin: 20px;
+    padding: 50px;
+}
+.main-right {
+    margin-left: 20px;
+    padding-left: 50px;
+}
+.row {
+    display: flex;
+  }
+  
+  .column-right {
+    width: 75%;
+    color: gray;
+  }
+  .column {
+    width: 25%;
+    background-color: #22c0e8;
+  }
+  .column-left {
+    color: white;
+    padding: 10px 30px;
+  }
+
+  .img-responsive {
+      width: 100%;
+  }
+
+  #name-heading {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+    /* padding-left: 30px; */
+    padding-top: 15px;
+  }
+  
+  #section-heading {
+      text-transform: uppercase;
+      color: #22c0e8;
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: large;
+  }
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #22c0e8;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 22px;
+    width: 10px;
+    height: 10px;
+    z-index: 400;
+}
+
+.content-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    overflow: hidden;
+  }
+  
+  .content-wrap::before {
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    left: 0;
+    Content: "";
+    Background-color: #22c0e8;
+    height: 2px;
+  }
+  
+  .icon1 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border: 2px solid #22c0e8;
+    border-radius: 50%;
+    padding: 1rem;
+    background: white;
+  }
+
+  .icon {
+    text-align: center;
+  }
+  
+  .aligned-text {
+    /* display: block; */
+    /* width: 80%; */
+    display: table-cell;
+    vertical-align: middle;
+    overflow-wrap: anywhere;
+  }
+
+  .aligned {
+    display: table;
+    position: relative;
+  }
+
+  @media screen and (min-width: 1025px) {
+    #_progWrapper {
+      display:table;
+      border-spacing:1ex; 
+      margin-left:auto; 
+  }
+  /* @media only screen and (max-width: 768px) { */
+    #_progWrapper p span, #_progWrapper p progress {
+      display:table-cell;
+    } 
+  /* } */
+  
+  
+  #_progWrapper p span {
+      text-align:left; 
+  }
+  #_progWrapper p {
+      display:table-row; 
+  }    
+}
+  
